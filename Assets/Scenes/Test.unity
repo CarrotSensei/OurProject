@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 6225fa8890cf025489e57d3aa1d87260, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 52fcefd712182d743a781fde12426775, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,13 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.55390686, g: 0.9091401, b: 0.87166435, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +65,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -97,7 +92,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 0165726b4d5faf041968eb0be62d9b9c, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -140,11 +135,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1369297261}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1462185807}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -320,7 +315,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 411192953}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -576,17 +571,16 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569826987}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 11
   m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 0.6509434, g: 0.61604244, b: 0.26099145, a: 1}
+  m_Color: {r: 0.4988875, g: 0.7007512, b: 0.9528302, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -628,8 +622,12 @@ Light:
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
 --- !u!4 &569826989
 Transform:
   m_ObjectHideFlags: 0
@@ -638,13 +636,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569826987}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25, y: 3, z: -3}
+  m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
 --- !u!4 &604099418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -671,11 +669,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1369297261}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 411192953}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -1137,11 +1135,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1389917971}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 833044389}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -1382,11 +1380,11 @@ PrefabInstance:
       value: Node Cube (4)
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1462185807}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1306371016}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -1451,11 +1449,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1802599206}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1244149264}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -1520,11 +1518,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1154034849}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1802599206}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -1585,11 +1583,11 @@ PrefabInstance:
       value: Node Cube (5)
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1244149264}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1474435403}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -2053,11 +2051,11 @@ PrefabInstance:
       value: Node Cube (7)
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1474435403}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1357984886}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -2422,11 +2420,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 411192953}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1954825183}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -2630,11 +2628,11 @@ PrefabInstance:
       value: Upward Noad Quad
       objectReference: {fileID: 0}
     - target: {fileID: 9158927880867591901, guid: 8537994ce83a74d4ab887be9ffcc679d, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 841161930}
     - target: {fileID: 9158927880867591901, guid: 8537994ce83a74d4ab887be9ffcc679d, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1154034849}
     m_RemovedComponents: []
@@ -2655,11 +2653,11 @@ PrefabInstance:
       value: Node Cube (6)
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1306371016}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[1]
+      propertyPath: 'neighbors.Array.data[1]'
       value: 
       objectReference: {fileID: 1389917971}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
@@ -2789,7 +2787,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2398758854928071753, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
-      propertyPath: neighbors.Array.data[0]
+      propertyPath: 'neighbors.Array.data[0]'
       value: 
       objectReference: {fileID: 1357984886}
     - target: {fileID: 5338606805312231592, guid: 4dcdd151aa458b540b0622025163dcbb, type: 3}
